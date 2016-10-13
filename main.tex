@@ -41,7 +41,7 @@ BoldItalicFont = AGaramondPro-BoldItalic.otf ] % Main document font
 \usepackage{geometry}
 \geometry{a4paper,margin=0.85cm, bottom=0.5cm}
  %To reduce the height of the top margin uncomment: 
- \addtolength{\voffset}{-0.35cm}
+ \addtolength{\voffset}{+0.25cm}
 
 \usepackage{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
@@ -56,6 +56,8 @@ BoldItalicFont = AGaramondPro-BoldItalic.otf ] % Main document font
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
+\usepackage{multicol}
+\setlength{\columnsep}{2.5cm}
 
 \begin{document}
 
@@ -71,7 +73,7 @@ BoldItalicFont = AGaramondPro-BoldItalic.otf ] % Main document font
 \par{\centering\large {\textsc{Department of Computer Science and Engineering}}\par}\large
 \par{\centering\large {\textsc{Dual Degree Student at Indian Institute of Technology Kharagpur}}\par}\large
 %\par{{\begin{center}Dual Degree, \emph{Computer Science and Engineering}\end{center}}}
-\par{\centering\large {\textsc{E-214, RK Hall of Residence, IIT Kharagpur, West Bengal - 721302}}\par}\large
+\par{\centering\large {\textsc{A-208, RK Hall of Residence, IIT Kharagpur, West Bengal - 721302}}\par}\large
 %\begin{flushleft}{\normalsize {\href{mailto:nareshmdu@gmail.com}{nareshmdu@gmail.com}}}\end{flushleft}
 \hspace{3.5cm}\normalsize {\href{mailto:mayank.roy812@gmail.com}{mayank.roy812@gmail.com}}\hfill{Phone: +91-9800188403}\hspace{3.5cm}
 
@@ -101,7 +103,7 @@ BoldItalicFont = AGaramondPro-BoldItalic.otf ] % Main document font
 
 \begin{tabular}{R{3.0cm}|p{15.0cm}}	
 2013-2018 & B.Tech and M.Tech (Dual Degree) in \textsc{Computer Science and Engineering}\\
-\textsc{(Expected)}&\textbf{Indian Institute of Technology Kharagpur}\hfill\textsc{Cgpa}: 7.16/10.0\\
+\textsc{(Expected)}&\textbf{Indian Institute of Technology Kharagpur}\hfill\textsc{Cgpa}: 7.12/10.0\\
 %\hyperlink{grds}{\hfill | \footnotesize Detailed List of Exams}\\
 
 
@@ -120,35 +122,81 @@ BoldItalicFont = AGaramondPro-BoldItalic.otf ] % Main document font
 %\hyperlink{grds_usc}{\hfill| \footnotesize Detailed List of Exams}\\
 
 \end{tabular}
+%----------------------------------------------------------------------------------------
+%         Experience
+%----------------------------------------------------------------------------------------
+\section{Experience}
+
+\begin{tabular}{R{3.0cm}|p{15.0cm}}
+\textsc{May '16 to July '16} & \textbf{Infofree.com, Omaha, Nebraska, USA} \\
+ & \textbf{Group: }\textmd{Database Management Team}, infofree.com\\
+ & \textbf{Guide: }\textmd{Mr. Bob Smith} and \textmd{Mr. Ryan Carlson}\\
+& \textmd{Worked on creating a RESTful API for the search functionality for front-end, non-company developers so that they could have the freedom to create their own UI using the 400 million plus data entries the company provided as a back end accessible API}\\
+\multicolumn{2}{c}{} \\
+\textsc{Dec '15 to Jan '16} & \textbf{National Digital Library} \textmd{(IIT Kharagpur)} \\
+ & \textbf{Group: }\textmd{Under the Ministry of HRD}, Government of India\\
+& \textbf{Guide: }\textmd{Professor Partha Pratim Das} and \textmd{Professor Plaban Kumar Bhowmick}\\
+%& \footnotesize{- Developing a robust autonomous mobile robot to participate in the annual AUVSI ROBOSUB held in San Diego, California.}\\
+& \textmd{Worked on the database to query and display an \textbf{ordered lectures menu} for all lecture windows using php. Also worked on developing an \textbf{Android App} for the project by utilizing the API already developed and currently in development for basic features like search and displaying pdf pages}\\
+\multicolumn{2}{c}{} \\
+
+
+\end{tabular}
 
 %----------------------------------------------------------------------------------------
 %	Academic Projects
 %----------------------------------------------------------------------------------------
 
-\section{Projects Undertaken}
+\section{Academic Projects}
 
 \begin{tabular}{R{3.0cm}|p{15.0cm}}
 %\emph{Current} & 1\textsuperscript{st} year Analyst at \textsc{Lehman Brothers}, London \\
 \textsc{Jan '16 to Current} & \textbf{Automatic Speech Recognition using DNN on an External GPGPU} \\
  & \textbf{B.Tech Project: }\textmd{Department of Computer Science and Engineering}, IIT Kharagpur\\
 & \textbf{Guide: }\textmd{Professor Soumyajit Dey}\\
-%& \footnotesize{- Developing a robust autonomous mobile robot to participate in the annual AUVSI ROBOSUB held in San Diego, California.}\\
-& \textmd{Worked with the \textbf{TIMIT dataset} by the \textbf{NIST} to extract \textbf{MFCC and Filterbank} features to be used as the training vector for the \textbf{Deep Neural Network} and currently working on \textbf{Theano} for division of computational resources in the DNN between the CPU and the external GPU}\\
+& \textmd{Worked with the \textbf{TIMIT dataset} by the \textbf{NIST} to extract \textbf{MFCC and Filterbank} features to be used as the training vector for the \textbf{Deep Neural Network} and currently working with \textbf{OpenCL} for division of computational resources for feature extraction in the DNN to implement a low-computation intensive Speech Recognizer}\\
 \multicolumn{2}{c}{} \\
 
 \textsc{Sep '14 to Current} & \textbf{Swarm Robot} \textmd{(Autonomous mobile robots modelled as Swarms)} \\
  & \textbf{Group: }\textmd{Decentralized Terrain Exploration with Robot Swarms}, IIT Kharagpur\\
 & \textbf{Guide: }\textmd{Professor Pallab Dasgupta} and \textmd{Professor Somesh Kumar}\\
-%& \footnotesize{- Developing a robust autonomous mobile robot to participate in the annual AUVSI ROBOSUB held in San Diego, California.}\\
-& \textmd{Worked on the code for \textbf{motion control and path planner of a robot} built using ROS publisher/subscriber modules with Gazebo. Also designed the 3D model in Gazebo to model the real robots using links and joints. Currently working on developing an architecture for a robust swarm using \textbf{ROS with Protobuf}}\\
+& \textmd{Worked on the code for \textbf{motion control and path planner of a robot} and also designed the 3D model in Gazebo to model the real robots using links and joints along with a network to model communication between different robots on. Currently working on developing an architecture for a robust swarm using the \textbf{ARGoS Simulator}}\\
 \multicolumn{2}{c}{} \\
 
-\textsc{Dec '15 to Jan '16} & \textbf{National Digital Library} \textmd{(IIT Kharagpur)} \\
- & \textbf{Group: }\textmd{Under the Ministry of HRD}, Government of India\\
-& \textbf{Guide: }\textmd{Professor Partha Pratim Das} and \textmd{Professor Plaban Kumar Bhowmick}\\
-%& \footnotesize{- Developing a robust autonomous mobile robot to participate in the annual AUVSI ROBOSUB held in San Diego, California.}\\
-& \textmd{Worked on the NPTEL and NCERT Lectures in the database to query and display an \textbf{ordered lectures menu} for all lecture windows using php. Also worked on developing an \textbf{Android App} for the project by utilizing the API already developed and currently in development for basic features like search and displaying pdf pages}\\
+\textsc{July '16 to Current} & \textbf{Term Project: American Sign Language Recognizer} \\
+ & \textbf{Subject: }\textmd{Machine Learning, CS60050}, IIT Kharagpur\\
+& \textbf{Guide: }\textmd{Professor Pabitra Mitra}\\
+& \textmd{Working to build an end to end system for word translation from the ASL to English using motion data from \textbf{Data Gloves} as input and the understood word as the output. The work involves using \textbf{Convolutional Neural Networks} to learn the different hand signals and the transition movements between them }\\
 \multicolumn{2}{c}{} \\
+
+\textsc{July '16 to Current} & \textbf{Term Project: OCR++} \\
+ & \textbf{Subject: }\textmd{Speech and Natural Language Processing}, IIT Kharagpur\\
+& \textbf{Guide: }\textmd{Professor Pawan Goyal}\\
+& \textmd{Working on building an OCR system to simplify research papers and extract all the relevant data from it such as Author-Email mappings, figures, citations, contact details, abstract, introduction and diagrams too. }\\
+\multicolumn{2}{c}{} 
+\end{tabular}
+\section{ }
+\begin{tabular}{R{3.0cm}|p{15.0cm}}
+
+\textsc{Jan '16 to May '16} & \textbf{Term Project: Comment Analysis} \\
+ & \textbf{Subject: }\textmd{Complex Networks,} IIT Kharagpur\\
+& \textbf{Guide: }\textmd{Professor Animesh Mukherjee}\\
+& \textmd{Worked on finding an automated method to weed out spam and useless topics of conversations in an online comment thread after an article. The idea here is to find metrics that can be used to create a self learning system for online auto-moderation and also figure out how the topics in a comment section drift over time }\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Jan '16 to May '16} & \textbf{Term Project: Coursera-Moodle} \\
+ & \textbf{Subject: }\textmd{Database Management Systems,} IIT Kharagpur\\
+& \textbf{Guide: }\textmd{Professor Pabitra Mitra}\\
+& \textmd{Created a full fledged course management website with login for three groups of users, the Teachers and their assistants, the students, and the administrators. Also built a notification system to display notifications from any member to the other depending on their access level}\\
+\multicolumn{2}{c}{} \\
+
+
+\textsc{Jan '15 to Apr '15} & \textbf{Swimming Pool Management System}\\
+& \textbf{Guide: }\textmd{Professor Partha Pratim Das}\\
+& \textmd{Developed a software based on \textbf{JAVA} for an automation of all clerical and use-case activities at a Swimming Pool facility such as \textbf{registering and booking} for special events and handling the requests of the management such as the scheduling of slots, competitions, etc. \textbf{Three separate records} were maintained for handling the \textbf{member records, tasks and slots} and \textbf{SQL} was used for interfacing with the database}\\
+\multicolumn{2}{c}{} \\
+
+\end{tabular}
 
 %\textsc{April 2015} & \textbf{Wikification}\\
 %\textsc{March 2015} & \textbf{Guide: }\textmd{\href{http://cse.iitkgp.ac.in/~pawang/}{Professor Pawan Goyal}}\\
@@ -156,15 +204,13 @@ BoldItalicFont = AGaramondPro-BoldItalic.otf ] % Main document font
 %& \footnotesize{- The algorithm first identifies noun phrases and generates a Term-Sense mapping to disambiguate them. It then enriches the link co-occurrence matrix to improve the accuracy and then wikifies the article.}\\
 %& \footnotesize{ -Got familiar with the NLTK chunker, which was used to identify noun phrases.}\\
 %\multicolumn{2}{c}{} \\
-\textsc{Aug '15 to Dec '15} & \textbf{Compiler for TinyC}\\
-& \textbf{Guide: }\textmd{Professor Partha Pratim Das and Professor Pralay Mitra}\\
-& \textmd{Developed a \textbf{compiler} in the Compiler Lab course for a subset of options in C excluding memory/scope manipulations like static and malloc. Wrote the schema in lex and parsed using Yacc/Bison and wrote a \textbf{translator} to \textbf{three address code} and finally to \textbf{assembly x86-32} with register allocation using Chaitin’s Algorithm}\\
-\multicolumn{2}{c}{} \\
+% \textsc{Aug '15 to Dec '15} & \textbf{Compiler for TinyC}\\
+% & \textbf{Guide: }\textmd{Professor Partha Pratim Das and Professor Pralay Mitra}\\
+% & \textmd{Developed a \textbf{compiler} in the Compiler Lab course for a subset of options in C excluding memory/scope manipulations like static and malloc. Wrote the schema in lex and parsed using Yacc/Bison and wrote a \textbf{translator} to \textbf{three address code} and finally to \textbf{assembly x86-32} with register allocation using Chaitin’s Algorithm}\\
+% \multicolumn{2}{c}{} \\
+\section{Hackathons \& Workshops}
 
-\textsc{Jan '15 to Apr '15} & \textbf{Swimming Pool Management System}\\
-& \textbf{Guide: }\textmd{Professor Partha Pratim Das}\\
-& \textmd{Developed a software based on \textbf{JAVA} for an automation of all clerical and use-case activities at a Swimming Pool facility such as \textbf{registering and booking} for special events and handling the requests of the management such as the scheduling of slots, competitions, etc. \textbf{Three separate records} were maintained for handling the \textbf{member records, tasks and slots} and \textbf{SQL} was used for interfacing with the database}\\
-\multicolumn{2}{c}{} \\
+\begin{tabular}{R{3.0cm}|p{15.0cm}}
 
 \textsc{Mar '15} & \textbf{TapIt! Microsoft Code.Fun.Do}\\
 & \textmd{Developed and successfully submitted an \textbf{interactive tapping speed} based \textbf{Single-player/Multi-player} game. The game was built using the \textbf{Construct 2 Game editor} to develop the game in a team of four students}\\
@@ -173,7 +219,7 @@ BoldItalicFont = AGaramondPro-BoldItalic.otf ] % Main document font
 \textsc{Dec '14} & \textbf{Lane Following Robot} \\
 & \textbf{Group: }\textmd{Technology Robotix Society}, IIT Kharagpur in association with IEEE and Texas Instruments\\
 & \textmd{Used the \textbf{OpenCV libray} to develop a working code for \textbf{Shape Detection} and \textbf{Lane Following} using a mounted Camera for a two-wheeled autonomous differential drive robot}\\
-%\multicolumn{2}{c}{} \\
+\multicolumn{2}{c}{} \\
 
 %\textsc{Dec 2013} & \textbf{\href{http://www.robotix.in/tutorials/categ/auto/lfr}{Lane Follower Robot}} \\
 %& \footnotesize{- Developed an autonomous line following robot using Atmel AVR microprocessor(Atmega16) in an IEEE certified workshop organized by Technology Robotix Scociety, IIT Kharagpur.}\\
@@ -186,12 +232,14 @@ BoldItalicFont = AGaramondPro-BoldItalic.otf ] % Main document font
 \section{Technical Skills}
 
 \begin{tabular}{R{3.0cm}|p{15.0cm}}
-\textsc{Languages} & {\itshape{Expert : }}C, C++ {\itshape{Intermediate : }}Java, Python, MySQL, HTML, CSS, php\\
+\textsc{Languages} & {\itshape{Expert : }}C, C++ , Python \\
+& {\itshape{Intermediate : }}Java, MySQL, HTML, CSS, php\\
 & {\itshape{Beginner : }}Unix shell scripting, C\# \\
 %\multicolumn{2}{c}{} \\
 \textsc{Operating Systems} &  Microsoft Windows, Linux (Ubuntu \& CentOS)\\
 %\multicolumn{2}{c}{} \\
-\textsc{Libraries and IDEs} & ROS, Gazebo, git, Eclipse, Visual Studio, Netbeans, OpenCV, LaTeX\\
+\textsc{Libraries and IDEs} & Gazebo, git, Eclipse, Visual Studio, Netbeans, OpenCV, LaTeX\\
+\textsc{Frameworks} & Protobuf, ROS, ARGoS, OpenCL, OpenMP\\
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -201,10 +249,10 @@ BoldItalicFont = AGaramondPro-BoldItalic.otf ] % Main document font
 \section{Positions of Responsibility}
 
 \begin{tabular}{R{3.0cm}|p{15.0cm}}
-\textsc{Apr '14 to Current} & \textbf{Editor}, \textsc{The Scholars' Avenue, IIT Kharagpur}\\
+\textsc{Apr '14 to Current} & \textbf{Executive Editor}, \textsc{The Scholars' Avenue, IIT Kharagpur}\\
 %& \footnotesize{- Managing the content and design team of the society.}\\
 %& \footnotesize{- Writer in the English Team, and working as a senior editor for all English publications.}\\
-\textsc{Feb '14 to Current} & \textbf{Content Head}, \textsc{CodeClub, IIT Kharagpur} \\
+\textsc{Feb '14 to Current} & \textbf{Software Head}, \textsc{SwarmIITKGP, IIT Kharagpur} \\
 %\textsc{Apr 2015} & \textbf{Secretary}, CodeClub, IIT Kharagpur \\
 %& \footnotesize{- Part of the managing team, leading a group of 25 students.}\\
 %& \footnotesize{- Conducted several events, including Microsoft code.fun.do and BITWISE, the Annual Departmental Fest of the Department of Computer Science and Engineering, alongside several fortnightly competitive coding competitions within the campus.}\\
@@ -221,25 +269,34 @@ BoldItalicFont = AGaramondPro-BoldItalic.otf ] % Main document font
 
 \section{Coursework
 \hfill\small\textsc{(T)heory and (L)aboratory}}
-
-{\hspace{0.5cm}- Discrete Structures} \hfill {- Algorithms-I \& II (T/L)} \hspace{3.3cm} \\
-{\hspace*{0.5cm}- Software Engineering (T/L)} \hfill {- Matrix Algebra} \hspace{4.6cm} \\
-{\hspace*{0.5cm}- Formal Language and Automata Theory \hfill {- Graph Theory and Algorithms} \hspace{2.5cm} \\
-{\hspace*{0.5cm}- Compilers (T/L) \hfill {- Computer Organisation and Architecture (T/L)} \hspace{0.1cm} \\
-{\itshape{Currently Studying:}}\\
-{\hspace*{0.5cm}- Operating Systems (T/L)} \hfill {- Networks (T/L)} \hspace{4.5cm} \\
-{\hspace*{0.5cm}- Database Management Systems (T/L)} \hfill {- Complex Networks} \hspace{4.0cm} \\
-
+\begin{multicols}{2}
+- Discrete Structures \\
+- Algorithms (T/L)  \\
+- Software Engineering (T/L) \\
+- Matrix Algebra \\
+- Formal Language and Automata Theory \\ 
+- Graph Theory and Algorithms \\
+- Compilers (T/L) \\
+- Computer Organisation and Architecture (T/L) \\
+- Operating Systems (T/L) \\
+- Networks (T/L) \\
+- Database Management Systems (T/L) \\
+- Complex Networks \\
+- Natural Language Processing* \\
+- Artificial Intelligence*\\
+- Theory of Computation* \\
+- Machine Learning* \\
+\end{multicols}
 %----------------------------------------------------------------------------------------
 %	ACHIEVEMENTS
 %----------------------------------------------------------------------------------------
 
 \section{Scholastic \& Extra-Curricular Achievements}
 
-{\hspace{0.5cm}- Secured \textbf{92.70} percentile in JEE Mains 2013}\hspace{5.8cm}{- Secured \textbf{Rank 362} in JEE Advanced 2013}\\
+{- Secured \textbf{92.70} percentile in JEE Mains 2013}\hspace{6.3cm}{- Secured \textbf{Rank 362} in JEE Advanced 2013}\\
 %{\hspace*{0.5cm}- Secured 4th Position in \textsc{TCS IT Wiz Quiz, 2009} out of more than 500 participating teams}\\
-{\hspace*{0.5cm}- Secured \textbf{Bronze} in \textsc{Open-IIT General Quiz 2015-16, IIT Kharagpur}}\hspace{2.3cm}{- Secured \textbf{Gold} in \textsc{GES Biz Quiz, IIT Kharagpur}}\\
-{\hspace*{0.5cm}- Secured \textbf{Gold} in \textsc{Inter-Hall \textbf{ENGLISH} and \textbf{HINDI Dramatics}} team events for the \textbf{GC, Social and Cultural, 2015}}
+{- Secured \textbf{Silver} in \textsc{Open-IIT General Quiz 2015-16, 2016-17, IIT Kharagpur}}\hspace{1.7cm}{- Secured \textbf{Gold} in \textsc{GES Biz Quiz, IIT Kharagpur}}\\
+{- Secured \textbf{Gold} in \textsc{Inter-Hall \textbf{ENGLISH} and \textbf{HINDI Dramatics}} team events for the \textbf{GC, Social and Cultural, 2015}}
 
 
 %----------------------------------------------------------------------------------------
