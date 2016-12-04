@@ -11,6 +11,10 @@
 *.cb
 *.cb2
 
+## Font files:
+*.ttf
+*.otf
+
 ## Intermediate documents:
 *.dvi
 *-converted-to.*
