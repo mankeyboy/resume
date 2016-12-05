@@ -16,4 +16,4 @@ Class XII, Central Board of Secondary Education (CBSE) at Amity International Sc
 **2010**  
 Class X, Central Board of Secondary Education (CBSE) at Air Force Bal Bharati School, Delhi
 
-<incomplete, modified from ghostwriternr's repo [here](https://github.com/ghostwriternr/resume)>
+(incomplete, modified from ghostwriternr's repo [here](https://github.com/ghostwriternr/resume)
